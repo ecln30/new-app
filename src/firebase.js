@@ -52,7 +52,7 @@ const signInWithGoogle = async () => {
   }
 };
 
-const logInWithEmailAndPassword = async (email, password) => {
+const logIn = async (email, password) => {
   try {
     await signInWithEmailAndPassword(auth, email, password);
   } catch (err) {
@@ -92,11 +92,33 @@ const logout = () => {
 };
 
 export {
-  auth,
-  db,
-  signInWithGoogle,
-  logInWithEmailAndPassword,
-  registerWithEmailAndPassword,
+  auth,db,signInWithGoogle,logIn,registerWithEmailAndPassword,
   sendPasswordReset,
-  logout,
+  logout,getFirestore,query,getDocs,collection,where,addDoc
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

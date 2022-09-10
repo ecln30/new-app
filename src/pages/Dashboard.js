@@ -5,7 +5,7 @@ import "./Dashboard.css";
 import { auth, db, logout } from "../firebase";
 import { query, collection, getDocs, where } from "firebase/firestore";
 
-function Dashboard() {
+function Dashboard({setIsOut}) {
   const [user, loading, error] = useAuthState(auth);
   const [name, setName] = useState("");
   const navigate = useNavigate();
@@ -25,20 +25,19 @@ function Dashboard() {
 
   useEffect(() => {
     if (loading) return;
-    if (!user) return navigate("/");
+    if (!user) return navigate('/')
 
     fetchUserName();
   }, [user, loading]);
-
+  
   return (
     <div className="dashboard">
       <div className="dashboard__container">
-        Logged in as
-        <div>{name}</div>
-        <div>{user?.email}</div>
-        <button className="dashboard__btn" onClick={logout}>
+        <div> </div>
+        <h2 className="dashboard__btn" onClick={logout}>
           Logout
-        </button>
+        </h2>
+        <div className='user_name'>{name}</div>
       </div>
     </div>
   );

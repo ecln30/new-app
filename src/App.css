@@ -1,28 +1,64 @@
 
 
+* {
+  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
 
-
-
-
-
-
-
-
+body::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: none
+  }
 
 
 .App {
-    background: rgb(43, 52, 60)
+    position: relative;
+    width: 100vw;
+    height:100vh;
+    background: rgb(43, 52, 60);
+    
+}
+
+.text_container{
+  width:60vw;
+  height: 30rem;
+  margin-top:-100%;
+  margin-left: 20%;
+ 
+}
+
+textarea {
+  word-spacing: .1rem;
+  position: absolute;
+  top: 30%;
+  left:10%;
+  font-size:1.5rem;
+  padding: 30px;
+  border-radius: 7px;
 }
 
 
+.count {
+  position: absolute;
+  top: 68%;
+  right: 15%;
+ 
+}
 
+.hidden {
+   display: none;
+}
 
+.show {
+  display: block;
+}
 
+.txts {
+  width: 100px;
+  height: 100px;
+  color:white(43, 52, 60);
 
-
-
-
-
+}
 
 
 

@@ -12,12 +12,14 @@
     text-align: center;
     background-color: #dcdcdc;
     padding: 30px;
+    border-radius: 5px;
   }
   
   .reset__textBox {
     padding: 10px;
     font-size: 18px;
     margin-bottom: 10px;
+    border-radius: 5px;
   }
   
   .reset__btn {
@@ -27,10 +29,13 @@
     border: none;
     color: white;
     background-color: black;
+    border-radius: 5px;
+    cursor: pointer;
   }
   
   .reset div {
     margin-top: 7px;
+    cursor: pointer;
   }
 
 
